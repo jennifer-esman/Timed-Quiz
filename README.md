@@ -18,12 +18,12 @@ The project was initialized to create a timed quiz about coding and web developm
 
 ## Setup
 To run the project, click the link below:
+https://jennifer-esman.github.io/Timed-Quiz/
 
 
 ## Screenshots and Multimedia
-<img width="400" alt="Screen Shot of Finished Site" src="./images/Screenshot-web-app-1.jpg">
+<img width="400" alt="Screen Shot of Finished Site" src="./Assets/images/04-web-apis-homework-demo.gif">
 
-<img width="400" alt="Screen Shot of Finished Site" src="./images/Screenshot-web-app-2.jpg">
 
 ## Web Developer Contact Info
 <img width="150" alt="My Picture" src="https://avatars.githubusercontent.com/u/101906587?s=400&u=9d4b532e78136a3746fc5cc6796b69fd51c21ea4&v=4">

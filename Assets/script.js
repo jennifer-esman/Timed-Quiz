@@ -115,7 +115,7 @@ DecrementTime = Wrong_penalty_time => {
     quizTime.innerHTML = totalTime;
 }
 
-var quizTime = document.getElementById("quiz-time-left") 
+var quizTime = document.getElementById("quiz-time-left")
 var totalTime = 60;
 
 function CheckTime() {

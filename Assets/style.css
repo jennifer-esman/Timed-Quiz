@@ -1,5 +1,5 @@
 :root{
-    background-color: #ecf5ff;
+    background-color: #82bcfd;
     font-size: 62.5%;
 }
 
@@ -36,7 +36,7 @@ h3 {
     font-weight: 500;
 }
 
-/*utilites*/
+/*overall styles*/
 .container {
     display: flex;
     justify-content: center;
@@ -45,7 +45,7 @@ h3 {
 }
 
 .container > * {
-    width: 100%;
+    width: 70%;
 }
 
 .flex-column {
@@ -94,10 +94,11 @@ h3 {
     transform: none;    
 }
 
+/* quiz questions styling*/
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
-    width: 100%;
+    width: 70%;
     font-size: 1.8rem;
     border: 0.1rem solid rgba(255, 255, 255, 0);
     background-color: blueviolet;
@@ -115,7 +116,7 @@ h3 {
 
 .choice-answer {
     padding: 1.5rem;
-    width: 100%;
+    width: 70%;
 }
 
 .correct {
@@ -126,6 +127,14 @@ h3 {
     background-color: red;
 }
 
+/*timer styling*/
+#quiz-time-left {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+/*score and question display top of page*/
 #display {
     display: flex;
     justify-content: space-around;
@@ -157,6 +166,7 @@ input {
     box-shadow: 0 0.1rem 1.4rem 0 rgba(150, 0, 0, 0.2);
 }
 
+/*high Scores Styling*/
 #highScoresList {
     list-style: none;
     padding-left: 0;
@@ -172,8 +182,3 @@ input {
     transform: scale(1.025);
 }
 
-.timer {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
