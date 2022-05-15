@@ -1,3 +1,4 @@
+/*global variables*/
 var initials = document.getElementById('initials');
 
 var saveScore = document.getElementById('saveScore');
@@ -11,18 +12,18 @@ var removeUserScore = document.getElementById('removeScore');
 
 var maxHighScores = 5;
 console.log(highScores);
-
+/*populating the score and saving your score and initials*/
 finalScore.innerText = mostRecentScores;
 
 initials.addEventListener('keyup', () =>{
     saveScore.disabled = !initials.value;
 });
-
+/*removing scores from storage*/
 removeUserScore = (e) => {
 
     localStorage.clear('highScores',JSON.stringify(highScores));
 }
-
+/*adding scores to storage, only the top 5 can be saved*/
 saveUserScore = (e) => {
     e.preventDefault();
 

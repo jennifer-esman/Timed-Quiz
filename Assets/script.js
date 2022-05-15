@@ -1,3 +1,4 @@
+/*global variables*/
 var question = document.getElementById("question");
 var choices = Array.from(document.getElementsByClassName("choice-answer"));
 var questionCount = document.getElementById('question-count');
@@ -8,7 +9,7 @@ let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-
+/*quiz question options to be pulled at random*/
 let questions = [
     {
         question: "What HTML element allows us to add our js script?",
@@ -43,11 +44,11 @@ let questions = [
         answer: 1,   
     },
 ];
-
+/*bonus points for correct, wrong answer time penalty and number of questions to ask*/
 const Correct_Bonus = 10;
 const Wrong_penalty_time = 3;
 const Max_Questions = 4;
-
+/*script for running the quiz and progressing through questions*/
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -78,7 +79,7 @@ getNewQuestion = () => {
 
     acceptingAnswers = true;
 };
-
+/*code for coloring the correct and incorrect questions when answered*/
 choices.forEach( choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
@@ -104,7 +105,7 @@ choices.forEach( choice => {
     }, 1000);
     });
 });
-
+/* increasing points or decreasing the timer*/
 incrementScore = num => {
     score +=num;
     scoreCount.innerText = score;

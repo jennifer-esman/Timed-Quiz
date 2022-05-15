@@ -1,3 +1,4 @@
+/*making ranking of high scores and creating a list of top 5*/
 var highScoresList = document.getElementById('highScoresList');
 var highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
